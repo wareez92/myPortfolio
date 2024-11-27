@@ -85,6 +85,7 @@ header section {
 
   .single-project video {
     width: 40em;
+    margin-top: 2em;
   }
 
   .description {
@@ -97,14 +98,40 @@ header section {
     font-weight: 500;
     line-height: 1.25;
     align-self: center;
+    margin-top: 2em;
   }
 
   .project-thumbnails {
-    transition: .5s ease-in-out;
+    transition: 0.2s ease-in-out;
   }
 
   .project-thumbnails:hover {
     transform: translateY(-2em);
+  }
+
+  .social-icons {
+    transition: all .15s ease-in-out;
+  }
+
+  #linked-in {
+    transition: all .15s ease-in-out;
+  }
+
+   .social-icons:hover {
+    transform: scale(1.15);
+  }
+
+  #linked-in:hover {
+    transform: scale(1.15);
+  }
+
+  #resume a {
+    transition: all .2s ease-in-out;
+  }
+
+  #resume a:hover {
+    color: white;
+    background-color: var(--primary-color);
   }
 }
 

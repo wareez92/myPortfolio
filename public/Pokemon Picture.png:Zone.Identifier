@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://cloudconvert.com/
+HostUrl=https://us-east.storage.cloudconvert.com/tasks/c6d0dcd3-3976-4d67-9f22-3d2a110d99a5/Pokemon%20Picture.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cloudconvert-production%2F20241127%2Fva%2Fs3%2Faws4_request&X-Amz-Date=20241127T005214Z&X-Amz-Expires=86400&X-Amz-Signature=d99126a4d6d5d2ae93500dfc27bc20bc91936a93fd7f5aa5681f3d3f7f23d611&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3D%22Pokemon%20Picture.png%22&response-content-type=image%2Fpng&x-id=GetObject

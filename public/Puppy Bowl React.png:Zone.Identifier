@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://cloudconvert.com/
+HostUrl=https://us-east.storage.cloudconvert.com/tasks/ab9e5154-9f1f-4f1b-8f6b-fb26e226d32d/Puppy%20Bowl%20React.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cloudconvert-production%2F20241127%2Fva%2Fs3%2Faws4_request&X-Amz-Date=20241127T005108Z&X-Amz-Expires=86400&X-Amz-Signature=52a8c014c49a42d3218c8c001a684484fadfdb54087622f7b6de0e55bd247478&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3D%22Puppy%20Bowl%20React.png%22&response-content-type=image%2Fpng&x-id=GetObject
