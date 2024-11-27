@@ -72,7 +72,7 @@ const items = [
     img: `public/Pokemon Picture.png`,
     video: "/Pokemon React Demo.mp4",
     description:
-      "An application that curates pokemon and their properties to the user. The languages used to create this project are React.js HTML CSS Javascript",
+      "An application that curates Pokémon and their properties for the user. This project was created using React.js, HTML, CSS, and JavaScript.",
     link: "https://github.com/wareez92/pokemon",
     date: "2024",
   },
