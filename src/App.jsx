@@ -83,7 +83,7 @@ const items = [
     video: "/Puppy Pals React Demo.mp4",
     description:
       "Smaller version of puppy bowl. THe user can click on a puppy's name to get information on that pup. Info includes age and email. This app was made using React.js, HTML, CSS, Javascript",
-    link: "",
+    link: "https://github.com/wareez92/puppy-pals",
     date: "2024",
   },
   {
