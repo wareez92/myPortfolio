@@ -19,7 +19,7 @@ const items = [
   {
     id: 1,
     name: "Puppy Bowl React",
-    img: "public/Puppy Bowl React.png",
+    img: "/Puppy Bowl React.png",
     video: "/Puppy Bowl React Demo.mp4",
     description:
       "A project I worked on during my time at Fullstack Academy. This application allows users to create puppies by assigning a name, status, and image. The details page displays the time each puppy was created. React, HTML, CSS, and JavaScript were the technologies used to build this project.",
@@ -29,7 +29,7 @@ const items = [
   {
     id: 2,
     name: "Ice Mania",
-    img: `public/Ice Mania Pic.png`,
+    img: `/Ice Mania Pic.png`,
     video: "/Ice Mania Demo.mp4",
     description:
       "A game project I completed in 2018 using Unity and C#. The assets were created with Adobe Illustrator. In the game, players must catch as many ice cubes as possible to achieve the highest score while avoiding black ice, which ends the game.",
@@ -39,7 +39,7 @@ const items = [
   {
     id: 3,
     name: "Puppy Bowl",
-    img: `public/Puppy Bowl Picture.png`,
+    img: `/Puppy Bowl Picture.png`,
     video: "/Puppy Bowl Html.mp4",
     description:
       "A smaller version of Puppy Bowl. Users can click on a puppy's name to get detailed information about the pup, including age and email. This app was made using React.js, HTML, CSS, and JavaScript.",
@@ -49,7 +49,7 @@ const items = [
   {
     id: 4,
     name: "SynthStorm",
-    img: `public/SynthStorm Pic.png`,
+    img: `/SynthStorm Pic.png`,
     video: "/SynthStorm React Demo.mp4",
     description:
       "SynthStorm is an e-commerce website built with React.js, Node.js, Express.js, and PostgreSQL. Users can shop for synthesizers, add items to their cart, remove them, and complete purchases.",
@@ -59,7 +59,7 @@ const items = [
   {
     id: 5,
     name: "Party Planner",
-    img: `public/Party Planner Picture.png`,
+    img: `/Party Planner Picture.png`,
     video: "/PartyPlanner React Demo.mp4",
     description:
       "This application allows users to view the details of a planned party or delete a party from the planner. It was built using React.js, HTML, CSS, and JavaScript.",
@@ -69,7 +69,7 @@ const items = [
   {
     id: 6,
     name: "Pokemon",
-    img: `public/Pokemon Picture.png`,
+    img: `/Pokemon Picture.png`,
     video: "/Pokemon React Demo.mp4",
     description:
       "An application that curates Pokémon and their properties for the user. This project was created using React.js, HTML, CSS, and JavaScript.",
@@ -79,7 +79,7 @@ const items = [
   {
     id: 7,
     name: "Puppy Pals",
-    img: `public/Puppy Pals Picture.png`,
+    img: `/Puppy Pals Picture.png`,
     video: "/Puppy Pals React Demo.mp4",
     description:
       "Smaller version of puppy bowl. THe user can click on a puppy's name to get information on that pup. Info includes age and email. This app was made using React.js, HTML, CSS, Javascript",
@@ -89,7 +89,7 @@ const items = [
   {
     id: 8,
     name: "Book Buddy",
-    img: `public/Book Buddy Picture.png`,
+    img: `/Book Buddy Picture.png`,
     video: "/BookBuddy React Demo.mp4",
     description:
       "This application allows users to borrow books. Users can check out a book and return it later. They can also view the details of a single book. This app was created using React.js, HTML, CSS, and JavaScript.",
