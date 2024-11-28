@@ -5,13 +5,21 @@
   --primary-color: rgb(1, 0, 22);
 }
 
+html {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   margin: 0;
   padding: 0;
   color: var(--primary-color);
-  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 header section {
@@ -20,7 +28,6 @@ header section {
   width: 100%;
   top: -0.1em;
   display: flex;
-  box-sizing: border-box;
   z-index: 10;
   padding: 1em 2em 1em 2em;
   /* border: 2px solid black; */
@@ -155,6 +162,11 @@ header section {
 }
 
 @media (max-width: 48em) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
   #about {
     display: flex;
     flex-flow: column;
@@ -389,7 +401,6 @@ h2 {
   border: solid 4px var(--primary-color);
   border-radius: 4em;
   font-size: 1.5rem;
-  margin-left: -0.5em;
 }
 
 .project p {
