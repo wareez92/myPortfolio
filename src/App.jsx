@@ -160,7 +160,7 @@ function Navbar({ isVisible, toggleNavbar }) {
         transition: "top 0.3s ease-in-out",
         zIndex: "5",
         borderBottom: "2px solid black",
-        overflow: "scroll",
+        overflow: "hidden",
       }}
     >
       <ul>
@@ -195,6 +195,21 @@ function Title() {
   const toggleNavbar = () => {
     setIsNavbarVisible((prev) => !prev);
   };
+
+  useEffect(() => {
+    // Disable vertical scrolling on <html> element when navbar is visible
+    if (isNavbarVisible) {
+      document.documentElement.style.overflowY = "hidden"; // Apply to <html> element
+    } else {
+      document.documentElement.style.overflowY = "auto";  // Re-enable scrolling
+    }
+
+    // Cleanup to ensure scrolling is re-enabled when component unmounts
+    return () => {
+      document.documentElement.style.overflowY = "auto";
+    };
+  }, [isNavbarVisible]);
+
   return (
     <header>
       <section>
@@ -305,7 +320,7 @@ function SingleProject({ items }) {
       <h2>{project.name}</h2>
       <div className="single-project">
         <video src={project.video} autoPlay loop muted />
-        
+
         <div className="description">
           <p>{project.description}</p>
           <button onClick={() => navigate("/")}>Back to Projects</button>
@@ -333,19 +348,25 @@ function About() {
           <p>
             Hi, I’m Wareez!
             <br />
-            Im currently a student at Fullstack Academy. I first discovered my
-            interest in tech 2015 when my brothers were talking about creating
-            video game for the iPhone. I thought the idea was awesome and I took
-            notes on it and taught myself C# and build the game in unity. I
-            created all the assets for the game including character sprites and
-            backgrounds for the stages and composed the music. Although I wasn’t
-            able to successfully submit to the App Store, this experience stuck
-            with me forever. I learned the value of ideas and the beauty of
-            sticking with my goals until I reach them. Almost ten years later,
-            I’m now pursuing a career in the tech space with fully confidence in
-            my ability to plan a project from start to finish and my tenacity
-            when it comes to seeing things through no matter how difficult a
-            given task become.
+            My journey into technology began in 2015 when my brothers were
+            discussing the creation of a video game for the iPhone. I found the
+            idea fascinating and decided to take notes, which led me to teach
+            myself C# and develop the game using Unity. I was responsible for
+            creating all the assets, including character sprites, stage
+            backgrounds, and even composing the music. Although I wasn’t able to
+            successfully submit the game to the App Store, the experience left a
+            lasting impact on me. It taught me the importance of nurturing ideas
+            and the value of persistence in achieving goals. Today, I’m a
+            full-stack web developer with expertise in React.js, HTML, CSS, and
+            JavaScript. I’m extremely passionate about UI/UX design and have a
+            burning desire to create software products that not only solve
+            problems but also delight users. I thrive in collaborative
+            environments and am eager to work with a team that is dedicated to
+            innovation, excited to share ideas, and passionate about building
+            exceptional products. With nearly a decade of experience, I’m now
+            pursuing a career in the tech industry, confident in my ability to
+            plan, execute, and bring projects to life, no matter how challenging
+            the journey may be.
           </p>
         </div>
       </section>
@@ -358,7 +379,9 @@ function Resume() {
     <>
       <h2>Resume</h2>
       <section id="resume">
-        <a href="https://www.dropbox.com/scl/fi/9262iahb7osmavzjsuh0l/my-resume-2.pdf?rlkey=f32xxl7vd9el18l1e4yxhgfql&st=fsxlx9r1&dl=0">Open</a>
+        <a href="https://www.dropbox.com/scl/fi/9262iahb7osmavzjsuh0l/my-resume-2.pdf?rlkey=f32xxl7vd9el18l1e4yxhgfql&st=fsxlx9r1&dl=0">
+          Open
+        </a>
       </section>
     </>
   );
